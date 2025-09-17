@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sibiliny - Переосмысливая реальность</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0c0c0c 0%, #1a1a1a 50%, #2d2d2d 100%);
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+
+        header {
+            padding: 30px 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #00ff88;
+            text-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+        }
+
+        .hero {
+            padding: 160px 5% 80px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #00ff88, #00ccff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            margin-bottom: 40px;
+        }
+
+        .phone-showcase {
+            padding: 60px 5%;
+            text-align: center;
+        }
+
+        .phone-image {
+            max-width: 300px;
+            margin: 0 auto;
+            filter: drop-shadow(0 20px 40px rgba(0, 255, 136, 0.2));
+        }
+
+        .features {
+            padding: 80px 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #00ff88;
+        }
+
+        .specs {
+            padding: 80px 5%;
+            text-align: center;
+        }
+
+        .spec-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .spec-item {
+            padding: 20px;
+        }
+
+        .spec-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #00ff88;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            padding: 40px 5%;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="glass">
+        <nav>
+            <div class="logo">SIBILINY</div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Переосмысливая реальность</h1>
+        <p class="subtitle">Четыре камеры. Одна легенда</p>
+    </section>
+
+    <section class="phone-showcase">
+        <img src="https://postimg.cc/hh4cfrSS" alt="Sibiliny Phone" class="phone-image">
+    </section>
+
+    <section class="features">
+        <div class="feature-card glass">
+            <div class="feature-icon">📷</div>
+            <h3>4 камеры</h3>
+            <p>Профессиональная съёмка в любых условиях</p>
+        </div>
+        <div class="feature-card glass">
+            <div class="feature-icon">⚡</div>
+            <h3>Snapdragon 8 Gen 3</h3>
+            <p>Мощь, которая поражает</p>
+        </div>
+        <div class="feature-card glass">
+            <div class="feature-icon">🖥️</div>
+            <h3>2K OLED</h3>
+            <p>Невероятная чёткость и цвета</p>
+        </div>
+    </section>
+
+    <section class="specs">
+        <h2>Технические характеристики</h2>
+        <div class="spec-grid">
+            <div class="spec-item glass">
+                <div class="spec-value">4x</div>
+                <p>Камерная система</p>
+            </div>
+            <div class="spec-item glass">
+                <div class="spec-value">120Гц</div>
+                <p>Частота обновления</p>
+            </div>
+            <div class="spec-item glass">
+                <div class="spec-value">5000мАч</div>
+                <p>Батарея</p>
+            </div>
+            <div class="spec-item glass">
+                <div class="spec-value">256ГБ</div>
+                <p>Память</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="glass">
+        <p>© 2025 Sibiliny Technologies. Переосмысливая реальность</p>
+    </footer>
+</body>
+</html>
